@@ -54,7 +54,20 @@
       <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="b1230adc-58e4-4ce7-a1e0-1702f2df234c"
           name="Roles"/>
       <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="4337dc2c-c062-439a-b3e3-ee5c86bcde51"
-          name="Operational Entities"/>
+          name="Operational Entities">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="b4bb48ab-5bc3-487b-98bf-30d189793679"
+            name="User" abstractType="#eb5f5911-3a06-4c65-8bad-d956b25d5a8c"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="f91006b4-b8a3-4bed-9024-b68c3266ef44"
+            name="Alarm Clock" abstractType="#d479900f-87da-4a56-bb86-00c1e2bda3e5"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="0e8d22f6-1961-40b8-bee7-1a9fbba504b9"
+            name="Radio Station" abstractType="#49e25520-37cb-4f68-acc1-cd15de305d2e"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="eb5f5911-3a06-4c65-8bad-d956b25d5a8c"
+            name="User" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="d479900f-87da-4a56-bb86-00c1e2bda3e5"
+            name="Alarm Clock"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="49e25520-37cb-4f68-acc1-cd15de305d2e"
+            name="Radio Station"/>
+      </ownedEntityPkg>
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
         id="0937b3b2-e6cf-41aa-9ce4-4a9ba5320a91" name="System Analysis">
